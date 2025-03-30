@@ -1,4 +1,4 @@
-name: 'ip_filter'
+name: 'custom_allocator'
 
 on:
   push:
