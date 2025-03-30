@@ -3,7 +3,7 @@ name: 'custom_allocator'
 on:
   push:
     branches:
-      - master
+      - main
       - develop
 jobs:
   build:
