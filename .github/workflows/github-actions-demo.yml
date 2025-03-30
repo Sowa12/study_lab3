@@ -13,7 +13,6 @@ jobs:
         with:
           submodules: true
       - run: sudo apt-get update && sudo apt-get install libboost-test-dev -y && sudo apt-get install libxorg-gtest-dev -y
-      - run: rm -r build
       - run: cmake -B build -DPATCH_VERSION=${{ github.run_number }} DWITH_GTEST_TEST=ON
       - run: cmake --build build
       - run: cmake --build build --target test
